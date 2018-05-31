@@ -15,8 +15,11 @@ Dependencies:
 Configuration:
 - You have to put set two paths at
   ./resources/constant.py
+  
   FILE_ROOT=where you our dataset.
+  
   GLOVE_VEC=the path where you can find pretrained glove vectors.
+  
   EXP_ROOT=where you save models.
 
 Preprocessing:
@@ -24,8 +27,11 @@ Preprocessing:
  - The model reported in the paper is trained on a data from
     (1) a subset of Gigaword corpus, (2) Wikilink dataset, (3) Wikipedia document and (4) Indomain crowd-sourced data
 
-  (2), (3), (4) can be downloaded from here [**TODO**]
-  Gigaword is a licensed dataset from LDC, so is not released with the code. Without (1), however, model can reach reasonable performances.
+  (2), (3), (4) can be downloaded from here 
+  
+  
+  [**TODO**]
+  Gigaword is a licensed dataset from LDC, so is not released with the code. Without (1), however, model can reach reasonable performances (29.8F1 instead of 31.7F1 reported).
 
   Alternatively, you can email the first author get the processed version after verifying your LDC license.
 
