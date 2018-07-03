@@ -30,15 +30,14 @@ Preprocessing:
   (2), (3), (4) can be downloaded from here 
   
   
-  [**TODO**]
   Gigaword is a licensed dataset from LDC, so is not released with the code. Without (1), however, model can reach reasonable performances (29.8F1 instead of 31.7F1 reported).
 
   Alternatively, you can email the first author get the processed version after verifying your LDC license.
 
- - You can also download our best-performing trained model and its predictions here.   
-   - [**TODO**]
+ - You can also download our best-performing trained model and its predictions from the project webpage.   
 
 To train a model:
+
 python3 main.py MODEL_ID -lstm_type single -enhanced_mention -data_setup joint -add_crowd -multitask
 
 To train model on the Ontonotes dataset
