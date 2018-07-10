@@ -3,6 +3,8 @@ This repository contains code for the following paper:
 Ultra-Fine Entity Typing
 Eunsol Choi, Omer Levy, Yejin Choi and Luke Zettlemoyer. (ACL 2018)
 
+Project website: https://homes.cs.washington.edu/~eunsol/_site/open_entity.html
+
 Dependencies:
 - Pytorch
 - Python3
@@ -52,3 +54,9 @@ python3 scrorer.py MODEL_NAME_TIMESTAMP
 
 Contact:
    Eunsol Choi -- firstname@cs.washington.edu
+   
+ 
+Credit:
+- Some code is modified from existing code resources.
+https://github.com/shimaokasonse/NFGEC
+https://github.com/allenai/allennlp
