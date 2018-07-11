@@ -49,7 +49,9 @@ python3 main.py MODEL_ID -lstm_type single -enhanced_mention -data_setup joint -
 
 ### Scorer: 
 
-python3 scrorer.py 
+python3 scrorer.py OUTPUT_FILENAME
+
+
 
 Contact:
    Eunsol Choi -- firstname@cs.washington.edu
