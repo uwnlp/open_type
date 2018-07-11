@@ -2,7 +2,7 @@ This repository contains code for the following paper:
 
 ## Ultra-Fine Entity Typing
 
-###Eusol Choi, Omer Levy, Yejin Choi and Luke Zettlemoyer. (ACL 2018)
+#### Eusol Choi, Omer Levy, Yejin Choi and Luke Zettlemoyer. (ACL 2018)
 
 Project website: https://homes.cs.washington.edu/~eunsol/_site/open_entity.html
 
@@ -30,7 +30,7 @@ Project website: https://homes.cs.washington.edu/~eunsol/_site/open_entity.html
  - The model reported in the paper is trained on a data from
     (1) a subset of Gigaword corpus, (2) Wikilink dataset, (3) Wikipedia document and (4) Indomain crowd-sourced data
 
-  (2), (3), (4) can be downloaded from here 
+  (2), (3), (4) can be downloaded from here http://nlp.cs.washington.edu/entity_type/data/ultrafine_acl18.tar.gz 
     
  - Gigaword is a licensed dataset from LDC, so is not released with the code. 
  - Without it, however, model can reach reasonable performances (29.8F1 instead of 31.7F1 reported).
@@ -47,9 +47,9 @@ python3 main.py onto -lstm_type single -goal onto  -enhanced_mention
 To run predictions of pre-trained model:
 python3 main.py MODEL_ID -lstm_type single -enhanced_mention -data_setup joint -add_crowd -multitask -mode test -reload_model_name MODEL_NAME_TIMESTAMP -eval_data crowd/test.json -load
 
-### To evaluate the model, 
+### Scorer: 
 
-python3 scrorer.py MODEL_NAME_TIMESTAMP
+python3 scrorer.py 
 
 Contact:
    Eunsol Choi -- firstname@cs.washington.edu
