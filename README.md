@@ -6,10 +6,10 @@ Eunsol Choi, Omer Levy, Yejin Choi and Luke Zettlemoyer. (ACL 2018)
 Project website: https://homes.cs.washington.edu/~eunsol/_site/open_entity.html
 
 Dependencies:
-- Pytorch
-- Python3
+- Pytorch (ver 0.3.0)
+- Python3 
 - Numpy
-- Tensorboard
+- Tensorboard 
 - Pretrained word embeddings:
     Download "Common Crawl (840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB download)" from https://nlp.stanford.edu/projects/glove/
     or do "wget http://nlp.stanford.edu/data/glove.840B.300d.zip".
@@ -32,11 +32,10 @@ Preprocessing:
   (2), (3), (4) can be downloaded from here 
   
   
-  Gigaword is a licensed dataset from LDC, so is not released with the code. Without (1), however, model can reach reasonable performances (29.8F1 instead of 31.7F1 reported).
+ - Gigaword is a licensed dataset from LDC, so is not released with the code. 
+ - Without it, however, model can reach reasonable performances (29.8F1 instead of 31.7F1 reported).
 
-  Alternatively, you can email the first author get the processed version after verifying your LDC license.
-
- - You can also download our best-performing trained model and its predictions from the project webpage.   
+ - Alternatively, you can email the first author get the processed version after verifying your LDC license.
 
 To train a model:
 
@@ -58,5 +57,5 @@ Contact:
  
 Credit:
 - Some code is modified from existing code resources.
-https://github.com/shimaokasonse/NFGEC
-https://github.com/allenai/allennlp
+  * https://github.com/shimaokasonse/NFGEC
+  * https://github.com/allenai/allennlp
