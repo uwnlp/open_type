@@ -1,11 +1,12 @@
 This repository contains code for the following paper:
 
-Ultra-Fine Entity Typing
-Eunsol Choi, Omer Levy, Yejin Choi and Luke Zettlemoyer. (ACL 2018)
+## Ultra-Fine Entity Typing
+
+###Eusol Choi, Omer Levy, Yejin Choi and Luke Zettlemoyer. (ACL 2018)
 
 Project website: https://homes.cs.washington.edu/~eunsol/_site/open_entity.html
 
-Dependencies:
+### Dependencies:
 - Pytorch (ver 0.3.0)
 - Python3 
 - Numpy
@@ -14,8 +15,8 @@ Dependencies:
     Download "Common Crawl (840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB download)" from https://nlp.stanford.edu/projects/glove/
     or do "wget http://nlp.stanford.edu/data/glove.840B.300d.zip".
 
-Configuration:
-- You have to put set two paths at
+### Configuration:
+- You have to put set three paths at
   ./resources/constant.py
   
   FILE_ROOT=where you our dataset.
@@ -24,20 +25,19 @@ Configuration:
   
   EXP_ROOT=where you save models.
 
-Preprocessing:
+### Preprocessing:
 
  - The model reported in the paper is trained on a data from
     (1) a subset of Gigaword corpus, (2) Wikilink dataset, (3) Wikipedia document and (4) Indomain crowd-sourced data
 
   (2), (3), (4) can be downloaded from here 
-  
-  
+    
  - Gigaword is a licensed dataset from LDC, so is not released with the code. 
  - Without it, however, model can reach reasonable performances (29.8F1 instead of 31.7F1 reported).
 
  - Alternatively, you can email the first author get the processed version after verifying your LDC license.
 
-To train a model:
+### To train a model:
 
 python3 main.py MODEL_ID -lstm_type single -enhanced_mention -data_setup joint -add_crowd -multitask
 
@@ -47,7 +47,7 @@ python3 main.py onto -lstm_type single -goal onto  -enhanced_mention
 To run predictions of pre-trained model:
 python3 main.py MODEL_ID -lstm_type single -enhanced_mention -data_setup joint -add_crowd -multitask -mode test -reload_model_name MODEL_NAME_TIMESTAMP -eval_data crowd/test.json -load
 
-To evaluate the model, 
+### To evaluate the model, 
 
 python3 scrorer.py MODEL_NAME_TIMESTAMP
 
